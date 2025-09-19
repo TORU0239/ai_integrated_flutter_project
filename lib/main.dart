@@ -106,7 +106,7 @@ class _LandingPageState extends State<LandingPage> {
                 ),
                 const SizedBox(height: 12),
                 DropdownButtonFormField<String>(
-                  value: _selectedLanguage,
+                  initialValue: _selectedLanguage,
                   items: _languages
                       .map(
                         (language) => DropdownMenuItem(
