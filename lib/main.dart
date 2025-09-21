@@ -1,53 +1,108 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
+import 'l10n/app_localizations.dart';
+import 'resources/app_colors.dart';
+import 'resources/app_strings.dart';
+import 'widgets/app_card.dart';
 
 void main() {
   runApp(const MainApp());
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends StatefulWidget {
   const MainApp({super.key});
+
+  @override
+  State<MainApp> createState() => _MainAppState();
+}
+
+class _MainAppState extends State<MainApp> {
+  Locale _locale = AppStrings.defaultLocale;
+
+  void _handleLocaleChanged(Locale locale) {
+    if (_locale == locale) {
+      return;
+    }
+    setState(() {
+      _locale = locale;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'AI Mental Care',
+      locale: _locale,
+      supportedLocales: AppStrings.supportedLocales,
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      onGenerateTitle: (context) => AppStrings.of(context).appTitle,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF5B7BFF)),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary),
         useMaterial3: true,
       ),
-      home: const LandingPage(),
+      home: LandingPage(
+        selectedLocale: _locale,
+        onLocaleChanged: _handleLocaleChanged,
+      ),
     );
   }
 }
 
 class LandingPage extends StatefulWidget {
-  const LandingPage({super.key});
+  const LandingPage({
+    super.key,
+    required this.selectedLocale,
+    required this.onLocaleChanged,
+  });
+
+  final Locale selectedLocale;
+  final ValueChanged<Locale> onLocaleChanged;
 
   @override
   State<LandingPage> createState() => _LandingPageState();
 }
 
 class _LandingPageState extends State<LandingPage> {
-  final List<String> _languages = ['한국어', 'English'];
-  String _selectedLanguage = '한국어';
+  late Locale _selectedLocale;
   bool _isConsentGiven = false;
 
+  @override
+  void initState() {
+    super.initState();
+    _selectedLocale = widget.selectedLocale;
+  }
+
+  @override
+  void didUpdateWidget(covariant LandingPage oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.selectedLocale != widget.selectedLocale) {
+      _selectedLocale = widget.selectedLocale;
+    }
+  }
+
   void _showComingSoonMessage() {
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(const SnackBar(content: Text('준비 중인 기능입니다.')));
+    final strings = AppStrings.of(context);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(strings.snackBarComingSoon)),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final strings = AppStrings.of(context);
 
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFFF1F4FF), Color(0xFFFFFFFF)],
+            colors: [AppColors.gradientTop, AppColors.gradientBottom],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
@@ -59,7 +114,7 @@ class _LandingPageState extends State<LandingPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'AI 멘탈케어 챗봇',
+                  strings.landingHeadline,
                   style: theme.textTheme.headlineMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: theme.colorScheme.primary,
@@ -67,59 +122,54 @@ class _LandingPageState extends State<LandingPage> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  '자살 예방과 감정 케어를 위한 안전한 동반자',
+                  strings.landingSubheadline,
                   style: theme.textTheme.titleMedium,
                 ),
                 const SizedBox(height: 24),
-                Card(
-                  elevation: 2,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          '서비스 & 보안 정책',
-                          style: theme.textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.w600,
-                          ),
+                AppCard(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        strings.servicePolicyHeading,
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.w600,
                         ),
-                        const SizedBox(height: 12),
-                        const Text(
-                          '• 모든 대화는 종단간 암호화로 보호됩니다.\n'
-                          '• 감정 위험 패턴 탐지 시 긴급 대응 절차를 즉시 안내합니다.\n'
-                          '• 긴급 상황에서는 신원 확인을 요청할 수 있습니다.',
+                      ),
+                      const SizedBox(height: 12),
+                      ...strings.servicePolicies.map(
+                        (policy) => Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Text('• $policy'),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  '언어 선택',
+                  strings.languageSelectionLabel,
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w600,
                   ),
                 ),
                 const SizedBox(height: 12),
-                DropdownButtonFormField<String>(
-                  initialValue: _selectedLanguage,
-                  items: _languages
+                DropdownButtonFormField<Locale>(
+                  initialValue: _selectedLocale,
+                  items: AppStrings.supportedLocales
                       .map(
-                        (language) => DropdownMenuItem(
-                          value: language,
-                          child: Text(language),
+                        (locale) => DropdownMenuItem(
+                          value: locale,
+                          child: Text(strings.languageLabel(locale)),
                         ),
                       )
                       .toList(),
                   onChanged: (value) {
                     if (value != null) {
                       setState(() {
-                        _selectedLanguage = value;
+                        _selectedLocale = value;
                       });
+                      widget.onLocaleChanged(value);
                     }
                   },
                   decoration: const InputDecoration(
@@ -134,8 +184,8 @@ class _LandingPageState extends State<LandingPage> {
                 CheckboxListTile(
                   value: _isConsentGiven,
                   controlAffinity: ListTileControlAffinity.leading,
-                  title: const Text('긴급 상황 시 신원 확인 요청에 동의합니다.'),
-                  subtitle: const Text('서비스 이용 약관 및 개인정보 처리방침을 확인했습니다.'),
+                  title: Text(strings.consentTitle),
+                  subtitle: Text(strings.consentSubtitle),
                   onChanged: (value) {
                     setState(() {
                       _isConsentGiven = value ?? false;
@@ -148,7 +198,7 @@ class _LandingPageState extends State<LandingPage> {
                   style: FilledButton.styleFrom(
                     minimumSize: const Size.fromHeight(56),
                   ),
-                  child: const Text('익명으로 시작하기'),
+                  child: Text(strings.anonymousCta),
                 ),
                 const SizedBox(height: 12),
                 OutlinedButton.icon(
@@ -157,11 +207,11 @@ class _LandingPageState extends State<LandingPage> {
                   style: OutlinedButton.styleFrom(
                     minimumSize: const Size.fromHeight(56),
                   ),
-                  label: const Text('소셜 계정으로 연결하기'),
+                  label: Text(strings.socialCta),
                 ),
                 const SizedBox(height: 32),
                 Text(
-                  '서비스 주요 기능',
+                  strings.featureSectionTitle,
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w600,
                   ),
@@ -170,61 +220,54 @@ class _LandingPageState extends State<LandingPage> {
                 Wrap(
                   spacing: 16,
                   runSpacing: 16,
-                  children: const [
+                  children: [
                     _LandingFeatureCard(
                       icon: Icons.chat_bubble_outline,
-                      title: 'AI 챗봇 상담',
-                      description: '실시간 감정 대화를 통해 위기 신호를 감지하고 안전한 상담을 제공합니다.',
+                      title: strings.featureChatTitle,
+                      description: strings.featureChatDescription,
                     ),
                     _LandingFeatureCard(
                       icon: Icons.dashboard_customize_outlined,
-                      title: '홈 대시보드',
-                      description: '오늘의 감정 기록과 최근 상담 이력을 한눈에 확인하세요.',
+                      title: strings.featureDashboardTitle,
+                      description: strings.featureDashboardDescription,
                     ),
                     _LandingFeatureCard(
                       icon: Icons.support_agent,
-                      title: '전문가 연결',
-                      description: '위험 감지 시 상담사에게 즉시 연결되고 화상 예약을 도와드립니다.',
+                      title: strings.featureExpertTitle,
+                      description: strings.featureExpertDescription,
                     ),
                     _LandingFeatureCard(
                       icon: Icons.trending_up,
-                      title: '리포트 & 자기관리',
-                      description:
-                          '감정 변화 그래프, 명상 콘텐츠, 건강 정보를 통해 꾸준한 케어를 도와드립니다.',
+                      title: strings.featureReportTitle,
+                      description: strings.featureReportDescription,
                     ),
                   ],
                 ),
                 const SizedBox(height: 32),
                 Text(
-                  '프리미엄 혜택',
+                  strings.premiumSectionTitle,
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w600,
                   ),
                 ),
                 const SizedBox(height: 12),
-                Card(
-                  elevation: 2,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text('• 1:1 개인 상담 매칭'),
-                        SizedBox(height: 8),
-                        Text('• 감정 리포트 내보내기 및 외부 공유'),
-                        SizedBox(height: 8),
-                        Text('• 스페셜 힐링 콘텐츠 구독'),
-                      ],
-                    ),
+                AppCard(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ...strings.premiumBenefits.map(
+                        (benefit) => Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Text('• $benefit'),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 const SizedBox(height: 40),
                 Center(
                   child: Text(
-                    '서비스 준비 중입니다. 곧 만나요!',
+                    strings.comingSoon,
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: theme.colorScheme.outline,
                     ),
@@ -255,28 +298,24 @@ class _LandingFeatureCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    return SizedBox(
-      width: 240,
-      child: Card(
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 280),
+      child: AppCard(
         elevation: 1,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Icon(icon, size: 32, color: theme.colorScheme.primary),
-              const SizedBox(height: 12),
-              Text(
-                title,
-                style: theme.textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.w600,
-                ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Icon(icon, size: 32, color: theme.colorScheme.primary),
+            const SizedBox(height: 12),
+            Text(
+              title,
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.w600,
               ),
-              const SizedBox(height: 8),
-              Text(description),
-            ],
-          ),
+            ),
+            const SizedBox(height: 8),
+            Text(description),
+          ],
         ),
       ),
     );
