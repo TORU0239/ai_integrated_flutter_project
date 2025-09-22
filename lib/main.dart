@@ -5,6 +5,7 @@ import 'l10n/app_localizations.dart';
 import 'resources/app_colors.dart';
 import 'resources/app_strings.dart';
 import 'widgets/app_card.dart';
+import 'screens/home_dashboard_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -91,6 +92,14 @@ class _LandingPageState extends State<LandingPage> {
     ScaffoldMessenger.of(
       context,
     ).showSnackBar(SnackBar(content: Text(strings.snackBarComingSoon)));
+  }
+
+  void _openHomeDashboard() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => const HomeDashboardPage(),
+      ),
+    );
   }
 
   @override
@@ -194,7 +203,7 @@ class _LandingPageState extends State<LandingPage> {
                 ),
                 const SizedBox(height: 16),
                 FilledButton(
-                  onPressed: _isConsentGiven ? _showComingSoonMessage : null,
+                  onPressed: _isConsentGiven ? _openHomeDashboard : null,
                   style: FilledButton.styleFrom(
                     minimumSize: const Size.fromHeight(56),
                   ),

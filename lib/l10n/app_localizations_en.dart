@@ -94,4 +94,61 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get languageNameEn => 'English';
+
+  @override
+  String get homeAppBarTitle => 'Home';
+
+  @override
+  String get homeGreeting => 'Hello! How are you feeling today?';
+
+  @override
+  String get homeCheckInPrompt => 'Take a moment to record your current mood and any notes.';
+
+  @override
+  String get homeRecordEmotionCta => 'Log mood';
+
+  @override
+  String get homeStartChatCta => 'Start AI counseling';
+
+  @override
+  String get homeRecentConversationsTitle => 'Recent conversations';
+
+  @override
+  String get homeViewAll => 'View all';
+
+  @override
+  String get homeRecentConversationsEmpty => 'No conversations yet. Start a session to see them here.';
+
+  @override
+  String get homeConversation1Title => 'AI counseling · Yesterday';
+
+  @override
+  String get homeConversation1Subtitle => 'You completed a breathing exercise and reported feeling calmer.';
+
+  @override
+  String get homeConversation2Title => 'Mood check-in · 2 days ago';
+
+  @override
+  String get homeConversation2Subtitle => 'Mood improved from 4/10 to 6/10 after journaling.';
+
+  @override
+  String get homeReportHighlightsTitle => 'Report highlights';
+
+  @override
+  String get homeReportHighlight1 => 'This week\'s mood trend is steady with fewer low points.';
+
+  @override
+  String get homeReportHighlight2 => 'You received 3 positive feedback messages recently.';
+
+  @override
+  String get homeReportHighlight3 => 'Recommended today: 5-minute mindful breathing audio.';
+
+  @override
+  String get homeQuickActionsTitle => 'Quick actions';
+
+  @override
+  String get homeEmotionHistoryCta => 'View mood history';
+
+  @override
+  String get homeReportCenterCta => 'Open wellness library';
 }

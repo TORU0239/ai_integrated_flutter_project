@@ -51,6 +51,33 @@ class AppStrings {
       ];
   String get comingSoon => _l10n.comingSoon;
   String get snackBarComingSoon => _l10n.snackBarComingSoon;
+  String get homeAppBarTitle => _l10n.homeAppBarTitle;
+  String get homeGreeting => _l10n.homeGreeting;
+  String get homeCheckInPrompt => _l10n.homeCheckInPrompt;
+  String get homeRecordEmotionCta => _l10n.homeRecordEmotionCta;
+  String get homeStartChatCta => _l10n.homeStartChatCta;
+  String get homeRecentConversationsTitle => _l10n.homeRecentConversationsTitle;
+  String get homeViewAll => _l10n.homeViewAll;
+  String get homeRecentConversationsEmpty => _l10n.homeRecentConversationsEmpty;
+  List<HomeConversationStrings> get homeRecentConversations => [
+        HomeConversationStrings(
+          title: _l10n.homeConversation1Title,
+          subtitle: _l10n.homeConversation1Subtitle,
+        ),
+        HomeConversationStrings(
+          title: _l10n.homeConversation2Title,
+          subtitle: _l10n.homeConversation2Subtitle,
+        ),
+      ];
+  String get homeReportHighlightsTitle => _l10n.homeReportHighlightsTitle;
+  List<String> get homeReportHighlights => [
+        _l10n.homeReportHighlight1,
+        _l10n.homeReportHighlight2,
+        _l10n.homeReportHighlight3,
+      ];
+  String get homeQuickActionsTitle => _l10n.homeQuickActionsTitle;
+  String get homeEmotionHistoryCta => _l10n.homeEmotionHistoryCta;
+  String get homeReportCenterCta => _l10n.homeReportCenterCta;
 
   String languageLabel(Locale locale) {
     switch (locale.languageCode) {
@@ -62,4 +89,14 @@ class AppStrings {
         return locale.toLanguageTag();
     }
   }
+}
+
+class HomeConversationStrings {
+  const HomeConversationStrings({
+    required this.title,
+    required this.subtitle,
+  });
+
+  final String title;
+  final String subtitle;
 }

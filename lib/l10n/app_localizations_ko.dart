@@ -94,4 +94,61 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get languageNameEn => 'English';
+
+  @override
+  String get homeAppBarTitle => '홈 대시보드';
+
+  @override
+  String get homeGreeting => '안녕하세요! 오늘 기분은 어떠신가요?';
+
+  @override
+  String get homeCheckInPrompt => '지금의 감정과 생각을 간단히 기록해 보세요.';
+
+  @override
+  String get homeRecordEmotionCta => '감정 기록하기';
+
+  @override
+  String get homeStartChatCta => 'AI 챗봇 상담 시작';
+
+  @override
+  String get homeRecentConversationsTitle => '최근 대화';
+
+  @override
+  String get homeViewAll => '전체 보기';
+
+  @override
+  String get homeRecentConversationsEmpty => '최근 대화가 아직 없어요. 상담을 시작해 보세요.';
+
+  @override
+  String get homeConversation1Title => 'AI 상담 · 어제';
+
+  @override
+  String get homeConversation1Subtitle => '호흡 명상을 마친 후 마음이 한결 가벼워졌다고 기록했어요.';
+
+  @override
+  String get homeConversation2Title => '감정 기록 · 이틀 전';
+
+  @override
+  String get homeConversation2Subtitle => '일기 작성 후 기분 지수가 4점에서 6점으로 올랐어요.';
+
+  @override
+  String get homeReportHighlightsTitle => '리포트 하이라이트';
+
+  @override
+  String get homeReportHighlight1 => '이번 주 감정 추세가 전반적으로 안정적이에요.';
+
+  @override
+  String get homeReportHighlight2 => '최근 긍정 피드백 알림을 3회 받았어요.';
+
+  @override
+  String get homeReportHighlight3 => '추천: 5분 마음챙김 호흡 음원을 들어보세요.';
+
+  @override
+  String get homeQuickActionsTitle => '바로가기';
+
+  @override
+  String get homeEmotionHistoryCta => '감정 기록 열람';
+
+  @override
+  String get homeReportCenterCta => '웰니스 라이브러리 열기';
 }

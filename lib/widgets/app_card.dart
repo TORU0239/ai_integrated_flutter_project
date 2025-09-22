@@ -20,13 +20,16 @@ class AppCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final radius = BorderRadius.circular(16);
 
-    return SizedBox(
-      width: width,
-      child: Card(
-        margin: margin,
-        elevation: elevation,
-        shape: RoundedRectangleBorder(borderRadius: radius),
-        child: Padding(padding: padding, child: child),
+    return Padding(
+      padding: margin,
+      child: SizedBox(
+        width: width,
+        child: Card(
+          margin: EdgeInsets.zero,
+          elevation: elevation,
+          shape: RoundedRectangleBorder(borderRadius: radius),
+          child: Padding(padding: padding, child: child),
+        ),
       ),
     );
   }

@@ -268,6 +268,120 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'English'**
   String get languageNameEn;
+
+  /// No description provided for @homeAppBarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get homeAppBarTitle;
+
+  /// No description provided for @homeGreeting.
+  ///
+  /// In en, this message translates to:
+  /// **'Hello! How are you feeling today?'**
+  String get homeGreeting;
+
+  /// No description provided for @homeCheckInPrompt.
+  ///
+  /// In en, this message translates to:
+  /// **'Take a moment to record your current mood and any notes.'**
+  String get homeCheckInPrompt;
+
+  /// No description provided for @homeRecordEmotionCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Log mood'**
+  String get homeRecordEmotionCta;
+
+  /// No description provided for @homeStartChatCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Start AI counseling'**
+  String get homeStartChatCta;
+
+  /// No description provided for @homeRecentConversationsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent conversations'**
+  String get homeRecentConversationsTitle;
+
+  /// No description provided for @homeViewAll.
+  ///
+  /// In en, this message translates to:
+  /// **'View all'**
+  String get homeViewAll;
+
+  /// No description provided for @homeRecentConversationsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No conversations yet. Start a session to see them here.'**
+  String get homeRecentConversationsEmpty;
+
+  /// No description provided for @homeConversation1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'AI counseling · Yesterday'**
+  String get homeConversation1Title;
+
+  /// No description provided for @homeConversation1Subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You completed a breathing exercise and reported feeling calmer.'**
+  String get homeConversation1Subtitle;
+
+  /// No description provided for @homeConversation2Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Mood check-in · 2 days ago'**
+  String get homeConversation2Title;
+
+  /// No description provided for @homeConversation2Subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Mood improved from 4/10 to 6/10 after journaling.'**
+  String get homeConversation2Subtitle;
+
+  /// No description provided for @homeReportHighlightsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report highlights'**
+  String get homeReportHighlightsTitle;
+
+  /// No description provided for @homeReportHighlight1.
+  ///
+  /// In en, this message translates to:
+  /// **'This week\'s mood trend is steady with fewer low points.'**
+  String get homeReportHighlight1;
+
+  /// No description provided for @homeReportHighlight2.
+  ///
+  /// In en, this message translates to:
+  /// **'You received 3 positive feedback messages recently.'**
+  String get homeReportHighlight2;
+
+  /// No description provided for @homeReportHighlight3.
+  ///
+  /// In en, this message translates to:
+  /// **'Recommended today: 5-minute mindful breathing audio.'**
+  String get homeReportHighlight3;
+
+  /// No description provided for @homeQuickActionsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick actions'**
+  String get homeQuickActionsTitle;
+
+  /// No description provided for @homeEmotionHistoryCta.
+  ///
+  /// In en, this message translates to:
+  /// **'View mood history'**
+  String get homeEmotionHistoryCta;
+
+  /// No description provided for @homeReportCenterCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Open wellness library'**
+  String get homeReportCenterCta;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
