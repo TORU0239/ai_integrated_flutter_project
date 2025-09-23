@@ -151,4 +151,46 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get homeReportCenterCta => '웰니스 라이브러리 열기';
+
+  @override
+  String get chatbotAppBarTitle => 'AI 상담';
+
+  @override
+  String get chatbotSafetyBannerTitle => '안전 안내';
+
+  @override
+  String get chatbotSafetyBannerBody => '위험을 느낄 때에는 가까운 응급 서비스나 믿을 수 있는 사람에게 바로 연락하세요. 저는 당신을 돕기 위해 여기 있지만, 위기 상황에서의 전문 도움을 대신할 수는 없어요.';
+
+  @override
+  String get chatbotQuickActionsTitle => '도움이 되는 도구';
+
+  @override
+  String get chatbotSelfAssessmentCta => '자가진단 시작';
+
+  @override
+  String get chatbotResourceCentreCta => '마음 진정 리소스 열기';
+
+  @override
+  String get chatbotEmptyStateTitle => '오늘 어떤 도움을 드릴까요?';
+
+  @override
+  String get chatbotEmptyStateBody => '지금 느끼는 감정이나 고민을 편하게 이야기해 주세요. 함께 한 걸음씩 풀어갈게요.';
+
+  @override
+  String get chatbotInputHint => '감정이나 궁금한 점을 입력해 보세요...';
+
+  @override
+  String get chatbotSendCta => '보내기';
+
+  @override
+  String get chatbotSampleUserMessage1 => '요즘 너무 벅차고 집중도 잘 안 돼요.';
+
+  @override
+  String get chatbotSampleBotMessage1 => '나눠줘서 고마워요. 잠시 깊게 숨을 쉬어보고, 무엇이 마음을 무겁게 하는지 함께 살펴볼까요?';
+
+  @override
+  String get chatbotSampleUserMessage2 => '주로 업무 스트레스랑 잠을 잘 못 자서 그런 것 같아요.';
+
+  @override
+  String get chatbotSampleBotMessage2 => '정말 지칠 수 있는 상황이에요. 오늘 밤 마음을 가라앉힐 작은 방법을 찾아볼까요? 짧은 호흡 연습이나 저널링을 해보는 건 어떨까요?';
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../resources/app_strings.dart';
 import '../widgets/app_card.dart';
+import 'chatbot_conversation_page.dart';
 
 class HomeDashboardPage extends StatelessWidget {
   const HomeDashboardPage({super.key});
@@ -10,6 +11,14 @@ class HomeDashboardPage extends StatelessWidget {
     final strings = AppStrings.of(context);
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(strings.snackBarComingSoon)),
+    );
+  }
+
+  void _openChatbot(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => const ChatbotConversationPage(),
+      ),
     );
   }
 
@@ -59,7 +68,7 @@ class HomeDashboardPage extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: FilledButton.icon(
-                onPressed: () => _showComingSoon(context),
+                onPressed: () => _openChatbot(context),
                 icon: const Icon(Icons.chat_bubble_outline),
                 label: Text(strings.homeStartChatCta),
                 style: FilledButton.styleFrom(

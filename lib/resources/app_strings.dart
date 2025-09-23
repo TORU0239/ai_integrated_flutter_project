@@ -78,6 +78,34 @@ class AppStrings {
   String get homeQuickActionsTitle => _l10n.homeQuickActionsTitle;
   String get homeEmotionHistoryCta => _l10n.homeEmotionHistoryCta;
   String get homeReportCenterCta => _l10n.homeReportCenterCta;
+  String get chatbotAppBarTitle => _l10n.chatbotAppBarTitle;
+  String get chatbotSafetyBannerTitle => _l10n.chatbotSafetyBannerTitle;
+  String get chatbotSafetyBannerBody => _l10n.chatbotSafetyBannerBody;
+  String get chatbotQuickActionsTitle => _l10n.chatbotQuickActionsTitle;
+  String get chatbotSelfAssessmentCta => _l10n.chatbotSelfAssessmentCta;
+  String get chatbotResourceCentreCta => _l10n.chatbotResourceCentreCta;
+  String get chatbotEmptyStateTitle => _l10n.chatbotEmptyStateTitle;
+  String get chatbotEmptyStateBody => _l10n.chatbotEmptyStateBody;
+  String get chatbotInputHint => _l10n.chatbotInputHint;
+  String get chatbotSendCta => _l10n.chatbotSendCta;
+  List<ChatMessageStrings> get chatbotSampleMessages => [
+        ChatMessageStrings(
+          text: _l10n.chatbotSampleUserMessage1,
+          isUser: true,
+        ),
+        ChatMessageStrings(
+          text: _l10n.chatbotSampleBotMessage1,
+          isUser: false,
+        ),
+        ChatMessageStrings(
+          text: _l10n.chatbotSampleUserMessage2,
+          isUser: true,
+        ),
+        ChatMessageStrings(
+          text: _l10n.chatbotSampleBotMessage2,
+          isUser: false,
+        ),
+      ];
 
   String languageLabel(Locale locale) {
     switch (locale.languageCode) {
@@ -99,4 +127,14 @@ class HomeConversationStrings {
 
   final String title;
   final String subtitle;
+}
+
+class ChatMessageStrings {
+  const ChatMessageStrings({
+    required this.text,
+    required this.isUser,
+  });
+
+  final String text;
+  final bool isUser;
 }

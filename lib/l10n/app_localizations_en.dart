@@ -151,4 +151,46 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homeReportCenterCta => 'Open wellness library';
+
+  @override
+  String get chatbotAppBarTitle => 'AI Counseling';
+
+  @override
+  String get chatbotSafetyBannerTitle => 'Safety notice';
+
+  @override
+  String get chatbotSafetyBannerBody => 'If you ever feel in danger, reach out to local emergency services or trusted contacts. I\'m here to support you, but I\'m not a substitute for professional crisis help.';
+
+  @override
+  String get chatbotQuickActionsTitle => 'Helpful tools';
+
+  @override
+  String get chatbotSelfAssessmentCta => 'Start self-assessment';
+
+  @override
+  String get chatbotResourceCentreCta => 'Open calming resources';
+
+  @override
+  String get chatbotEmptyStateTitle => 'How can I support you today?';
+
+  @override
+  String get chatbotEmptyStateBody => 'Share how you\'re feeling or what\'s on your mind. I\'ll listen and guide you step by step.';
+
+  @override
+  String get chatbotInputHint => 'Type your feelings or questions here...';
+
+  @override
+  String get chatbotSendCta => 'Send';
+
+  @override
+  String get chatbotSampleUserMessage1 => 'I\'ve been feeling overwhelmed and can\'t focus lately.';
+
+  @override
+  String get chatbotSampleBotMessage1 => 'Thank you for sharing that. Would it feel okay to take a deep breath together and explore what\'s been weighing on you?';
+
+  @override
+  String get chatbotSampleUserMessage2 => 'I think it\'s mostly work stress and not sleeping well.';
+
+  @override
+  String get chatbotSampleBotMessage2 => 'That sounds exhausting. We can look at small steps to ease your mind tonight. Would a short breathing exercise or journaling prompt help?';
 }

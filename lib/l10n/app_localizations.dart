@@ -382,6 +382,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Open wellness library'**
   String get homeReportCenterCta;
+
+  /// No description provided for @chatbotAppBarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'AI Counseling'**
+  String get chatbotAppBarTitle;
+
+  /// No description provided for @chatbotSafetyBannerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety notice'**
+  String get chatbotSafetyBannerTitle;
+
+  /// No description provided for @chatbotSafetyBannerBody.
+  ///
+  /// In en, this message translates to:
+  /// **'If you ever feel in danger, reach out to local emergency services or trusted contacts. I\'m here to support you, but I\'m not a substitute for professional crisis help.'**
+  String get chatbotSafetyBannerBody;
+
+  /// No description provided for @chatbotQuickActionsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Helpful tools'**
+  String get chatbotQuickActionsTitle;
+
+  /// No description provided for @chatbotSelfAssessmentCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Start self-assessment'**
+  String get chatbotSelfAssessmentCta;
+
+  /// No description provided for @chatbotResourceCentreCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Open calming resources'**
+  String get chatbotResourceCentreCta;
+
+  /// No description provided for @chatbotEmptyStateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How can I support you today?'**
+  String get chatbotEmptyStateTitle;
+
+  /// No description provided for @chatbotEmptyStateBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Share how you\'re feeling or what\'s on your mind. I\'ll listen and guide you step by step.'**
+  String get chatbotEmptyStateBody;
+
+  /// No description provided for @chatbotInputHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Type your feelings or questions here...'**
+  String get chatbotInputHint;
+
+  /// No description provided for @chatbotSendCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get chatbotSendCta;
+
+  /// No description provided for @chatbotSampleUserMessage1.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'ve been feeling overwhelmed and can\'t focus lately.'**
+  String get chatbotSampleUserMessage1;
+
+  /// No description provided for @chatbotSampleBotMessage1.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for sharing that. Would it feel okay to take a deep breath together and explore what\'s been weighing on you?'**
+  String get chatbotSampleBotMessage1;
+
+  /// No description provided for @chatbotSampleUserMessage2.
+  ///
+  /// In en, this message translates to:
+  /// **'I think it\'s mostly work stress and not sleeping well.'**
+  String get chatbotSampleUserMessage2;
+
+  /// No description provided for @chatbotSampleBotMessage2.
+  ///
+  /// In en, this message translates to:
+  /// **'That sounds exhausting. We can look at small steps to ease your mind tonight. Would a short breathing exercise or journaling prompt help?'**
+  String get chatbotSampleBotMessage2;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

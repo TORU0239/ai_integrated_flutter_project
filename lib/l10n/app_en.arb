@@ -47,5 +47,19 @@
   "homeReportHighlight3": "Recommended today: 5-minute mindful breathing audio.",
   "homeQuickActionsTitle": "Quick actions",
   "homeEmotionHistoryCta": "View mood history",
-  "homeReportCenterCta": "Open wellness library"
+  "homeReportCenterCta": "Open wellness library",
+  "chatbotAppBarTitle": "AI Counseling",
+  "chatbotSafetyBannerTitle": "Safety notice",
+  "chatbotSafetyBannerBody": "If you ever feel in danger, reach out to local emergency services or trusted contacts. I'm here to support you, but I'm not a substitute for professional crisis help.",
+  "chatbotQuickActionsTitle": "Helpful tools",
+  "chatbotSelfAssessmentCta": "Start self-assessment",
+  "chatbotResourceCentreCta": "Open calming resources",
+  "chatbotEmptyStateTitle": "How can I support you today?",
+  "chatbotEmptyStateBody": "Share how you're feeling or what's on your mind. I'll listen and guide you step by step.",
+  "chatbotInputHint": "Type your feelings or questions here...",
+  "chatbotSendCta": "Send",
+  "chatbotSampleUserMessage1": "I've been feeling overwhelmed and can't focus lately.",
+  "chatbotSampleBotMessage1": "Thank you for sharing that. Would it feel okay to take a deep breath together and explore what's been weighing on you?",
+  "chatbotSampleUserMessage2": "I think it's mostly work stress and not sleeping well.",
+  "chatbotSampleBotMessage2": "That sounds exhausting. We can look at small steps to ease your mind tonight. Would a short breathing exercise or journaling prompt help?"
 }
