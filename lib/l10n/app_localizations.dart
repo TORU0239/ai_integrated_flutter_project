@@ -254,7 +254,7 @@ abstract class AppLocalizations {
   /// No description provided for @snackBarComingSoon.
   ///
   /// In en, this message translates to:
-  /// **'Coming soon.'**
+  /// **'This feature is coming soon.'**
   String get snackBarComingSoon;
 
   /// No description provided for @languageNameKo.

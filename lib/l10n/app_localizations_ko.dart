@@ -87,7 +87,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get comingSoon => '서비스 준비 중입니다. 곧 만나요!';
 
   @override
-  String get snackBarComingSoon => '준비 중인 기능입니다.';
+  String get snackBarComingSoon => '해당 기능은 준비 중입니다.';
 
   @override
   String get languageNameKo => '한국어';
