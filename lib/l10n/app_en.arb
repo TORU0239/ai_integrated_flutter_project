@@ -77,5 +77,18 @@
   "expertProfile2Name": "Emily Park",
   "expertProfile2Title": "Clinical psychologist · Anxiety management",
   "expertProfile2Status": "Available today",
-  "expertMoreSpecialistsCta": "Browse more specialists"
+  "expertMoreSpecialistsCta": "Browse more specialists",
+  "moodHistoryAppBarTitle": "Mood history",
+  "moodHistoryIntro": "Track how your feelings changed over time and revisit notes from your daily check-ins.",
+  "moodHistoryLogTitle": "Recent mood entries",
+  "moodHistoryEmpty": "You don't have any recorded moods yet. Start logging to see your progress here.",
+  "moodHistorySampleDate1": "Today · 8:30 PM",
+  "moodHistorySampleSummary1": "Feeling hopeful after evening walk",
+  "moodHistorySampleBody1": "Energy picked up after talking with a close friend. Planning to write gratitude notes tonight.",
+  "moodHistorySampleDate2": "Yesterday · 11:15 AM",
+  "moodHistorySampleSummary2": "Stressed but managing",
+  "moodHistorySampleBody2": "Workload heavy but took short breathing sessions. Need to schedule time off this weekend.",
+  "moodHistorySampleDate3": "3 days ago · 9:00 PM",
+  "moodHistorySampleSummary3": "Low mood",
+  "moodHistorySampleBody3": "Felt anxious most of the day. Journaling helped slightly. Will share with counselor next session."
 }

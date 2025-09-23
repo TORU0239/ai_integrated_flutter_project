@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../resources/app_strings.dart';
 import '../widgets/app_card.dart';
 import 'chatbot_conversation_page.dart';
+import 'expert_connect_page.dart';
+import 'mood_history_page.dart';
 
 class HomeDashboardPage extends StatelessWidget {
   const HomeDashboardPage({super.key});
@@ -18,6 +20,22 @@ class HomeDashboardPage extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => const ChatbotConversationPage(),
+      ),
+    );
+  }
+
+  void _openMoodHistory(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => const MoodHistoryPage(),
+      ),
+    );
+  }
+
+  void _openExpertConnect(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => const ExpertConnectPage(),
       ),
     );
   }
@@ -88,7 +106,7 @@ class HomeDashboardPage extends StatelessWidget {
               children: [
                 Expanded(
                   child: OutlinedButton.icon(
-                    onPressed: () => _showComingSoon(context),
+                    onPressed: () => _openMoodHistory(context),
                     icon: const Icon(Icons.auto_graph),
                     label: Text(strings.homeEmotionHistoryCta),
                     style: OutlinedButton.styleFrom(
@@ -99,9 +117,9 @@ class HomeDashboardPage extends StatelessWidget {
                 const SizedBox(width: 12),
                 Expanded(
                   child: OutlinedButton.icon(
-                    onPressed: () => _showComingSoon(context),
-                    icon: const Icon(Icons.self_improvement),
-                    label: Text(strings.homeReportCenterCta),
+                    onPressed: () => _openExpertConnect(context),
+                    icon: const Icon(Icons.support_agent),
+                    label: Text(strings.expertAppBarTitle),
                     style: OutlinedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 16),
                     ),

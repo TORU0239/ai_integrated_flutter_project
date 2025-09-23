@@ -128,6 +128,27 @@ class AppStrings {
           status: _l10n.expertProfile2Status,
         ),
       ];
+  String get moodHistoryAppBarTitle => _l10n.moodHistoryAppBarTitle;
+  String get moodHistoryIntro => _l10n.moodHistoryIntro;
+  String get moodHistoryLogTitle => _l10n.moodHistoryLogTitle;
+  String get moodHistoryEmpty => _l10n.moodHistoryEmpty;
+  List<MoodLogStrings> get moodHistorySamples => [
+        MoodLogStrings(
+          date: _l10n.moodHistorySampleDate1,
+          summary: _l10n.moodHistorySampleSummary1,
+          body: _l10n.moodHistorySampleBody1,
+        ),
+        MoodLogStrings(
+          date: _l10n.moodHistorySampleDate2,
+          summary: _l10n.moodHistorySampleSummary2,
+          body: _l10n.moodHistorySampleBody2,
+        ),
+        MoodLogStrings(
+          date: _l10n.moodHistorySampleDate3,
+          summary: _l10n.moodHistorySampleSummary3,
+          body: _l10n.moodHistorySampleBody3,
+        ),
+      ];
 
   String languageLabel(Locale locale) {
     switch (locale.languageCode) {
@@ -171,4 +192,16 @@ class ExpertProfileStrings {
   final String name;
   final String title;
   final String status;
+}
+
+class MoodLogStrings {
+  const MoodLogStrings({
+    required this.date,
+    required this.summary,
+    required this.body,
+  });
+
+  final String date;
+  final String summary;
+  final String body;
 }

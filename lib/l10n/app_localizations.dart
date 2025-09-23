@@ -562,6 +562,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Browse more specialists'**
   String get expertMoreSpecialistsCta;
+
+  /// No description provided for @moodHistoryAppBarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Mood history'**
+  String get moodHistoryAppBarTitle;
+
+  /// No description provided for @moodHistoryIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Track how your feelings changed over time and revisit notes from your daily check-ins.'**
+  String get moodHistoryIntro;
+
+  /// No description provided for @moodHistoryLogTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent mood entries'**
+  String get moodHistoryLogTitle;
+
+  /// No description provided for @moodHistoryEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'You don\'t have any recorded moods yet. Start logging to see your progress here.'**
+  String get moodHistoryEmpty;
+
+  /// No description provided for @moodHistorySampleDate1.
+  ///
+  /// In en, this message translates to:
+  /// **'Today · 8:30 PM'**
+  String get moodHistorySampleDate1;
+
+  /// No description provided for @moodHistorySampleSummary1.
+  ///
+  /// In en, this message translates to:
+  /// **'Feeling hopeful after evening walk'**
+  String get moodHistorySampleSummary1;
+
+  /// No description provided for @moodHistorySampleBody1.
+  ///
+  /// In en, this message translates to:
+  /// **'Energy picked up after talking with a close friend. Planning to write gratitude notes tonight.'**
+  String get moodHistorySampleBody1;
+
+  /// No description provided for @moodHistorySampleDate2.
+  ///
+  /// In en, this message translates to:
+  /// **'Yesterday · 11:15 AM'**
+  String get moodHistorySampleDate2;
+
+  /// No description provided for @moodHistorySampleSummary2.
+  ///
+  /// In en, this message translates to:
+  /// **'Stressed but managing'**
+  String get moodHistorySampleSummary2;
+
+  /// No description provided for @moodHistorySampleBody2.
+  ///
+  /// In en, this message translates to:
+  /// **'Workload heavy but took short breathing sessions. Need to schedule time off this weekend.'**
+  String get moodHistorySampleBody2;
+
+  /// No description provided for @moodHistorySampleDate3.
+  ///
+  /// In en, this message translates to:
+  /// **'3 days ago · 9:00 PM'**
+  String get moodHistorySampleDate3;
+
+  /// No description provided for @moodHistorySampleSummary3.
+  ///
+  /// In en, this message translates to:
+  /// **'Low mood'**
+  String get moodHistorySampleSummary3;
+
+  /// No description provided for @moodHistorySampleBody3.
+  ///
+  /// In en, this message translates to:
+  /// **'Felt anxious most of the day. Journaling helped slightly. Will share with counselor next session.'**
+  String get moodHistorySampleBody3;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

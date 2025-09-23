@@ -241,4 +241,43 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get expertMoreSpecialistsCta => 'Browse more specialists';
+
+  @override
+  String get moodHistoryAppBarTitle => 'Mood history';
+
+  @override
+  String get moodHistoryIntro => 'Track how your feelings changed over time and revisit notes from your daily check-ins.';
+
+  @override
+  String get moodHistoryLogTitle => 'Recent mood entries';
+
+  @override
+  String get moodHistoryEmpty => 'You don\'t have any recorded moods yet. Start logging to see your progress here.';
+
+  @override
+  String get moodHistorySampleDate1 => 'Today · 8:30 PM';
+
+  @override
+  String get moodHistorySampleSummary1 => 'Feeling hopeful after evening walk';
+
+  @override
+  String get moodHistorySampleBody1 => 'Energy picked up after talking with a close friend. Planning to write gratitude notes tonight.';
+
+  @override
+  String get moodHistorySampleDate2 => 'Yesterday · 11:15 AM';
+
+  @override
+  String get moodHistorySampleSummary2 => 'Stressed but managing';
+
+  @override
+  String get moodHistorySampleBody2 => 'Workload heavy but took short breathing sessions. Need to schedule time off this weekend.';
+
+  @override
+  String get moodHistorySampleDate3 => '3 days ago · 9:00 PM';
+
+  @override
+  String get moodHistorySampleSummary3 => 'Low mood';
+
+  @override
+  String get moodHistorySampleBody3 => 'Felt anxious most of the day. Journaling helped slightly. Will share with counselor next session.';
 }

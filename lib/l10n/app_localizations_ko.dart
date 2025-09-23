@@ -241,4 +241,43 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get expertMoreSpecialistsCta => '다른 전문가 더 보기';
+
+  @override
+  String get moodHistoryAppBarTitle => '감정 기록';
+
+  @override
+  String get moodHistoryIntro => '시간에 따라 변한 감정을 살펴보고, 일일 기록에서 남긴 메모를 다시 확인해 보세요.';
+
+  @override
+  String get moodHistoryLogTitle => '최근 감정 기록';
+
+  @override
+  String get moodHistoryEmpty => '아직 감정 기록이 없어요. 기록을 시작하면 변화가 여기에 보여요.';
+
+  @override
+  String get moodHistorySampleDate1 => '오늘 · 오후 8:30';
+
+  @override
+  String get moodHistorySampleSummary1 => '저녁 산책 후 마음이 한결 밝아짐';
+
+  @override
+  String get moodHistorySampleBody1 => '친한 친구와 통화한 뒤 에너지가 조금 오름. 오늘 밤 감사 일기를 써볼 예정.';
+
+  @override
+  String get moodHistorySampleDate2 => '어제 · 오전 11:15';
+
+  @override
+  String get moodHistorySampleSummary2 => '스트레스 있지만 버티는 중';
+
+  @override
+  String get moodHistorySampleBody2 => '업무량이 많아 짧게 호흡 명상을 여러 번 함. 주말에 휴식 시간을 잡아야 할 듯.';
+
+  @override
+  String get moodHistorySampleDate3 => '3일 전 · 오후 9:00';
+
+  @override
+  String get moodHistorySampleSummary3 => '기분이 많이 가라앉음';
+
+  @override
+  String get moodHistorySampleBody3 => '종일 불안함. 저널링으로 조금 나아짐. 다음 상담 때 공유 예정.';
 }
