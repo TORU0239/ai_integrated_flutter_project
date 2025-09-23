@@ -61,5 +61,21 @@
   "chatbotSampleUserMessage1": "I've been feeling overwhelmed and can't focus lately.",
   "chatbotSampleBotMessage1": "Thank you for sharing that. Would it feel okay to take a deep breath together and explore what's been weighing on you?",
   "chatbotSampleUserMessage2": "I think it's mostly work stress and not sleeping well.",
-  "chatbotSampleBotMessage2": "That sounds exhausting. We can look at small steps to ease your mind tonight. Would a short breathing exercise or journaling prompt help?"
+  "chatbotSampleBotMessage2": "That sounds exhausting. We can look at small steps to ease your mind tonight. Would a short breathing exercise or journaling prompt help?",
+  "expertAppBarTitle": "Connect with Experts",
+  "expertIntroTitle": "Professional support",
+  "expertIntroBody": "Licensed counselors are available for private video sessions, secure messaging, and crisis support.",
+  "expertEmergencyCta": "Emergency help",
+  "expertEmergencySubtext": "Contact crisis hotlines or request immediate assistance.",
+  "expertListTitle": "Available counselors",
+  "expertBookSessionCta": "Book video session",
+  "expertMessageCta": "Send secure message",
+  "expertCallCta": "Request call back",
+  "expertProfile1Name": "Kim Seo-jun",
+  "expertProfile1Title": "Licensed counselor · Trauma care",
+  "expertProfile1Status": "Online · 15 min response",
+  "expertProfile2Name": "Emily Park",
+  "expertProfile2Title": "Clinical psychologist · Anxiety management",
+  "expertProfile2Status": "Available today",
+  "expertMoreSpecialistsCta": "Browse more specialists"
 }

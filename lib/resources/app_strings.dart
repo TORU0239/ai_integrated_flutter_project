@@ -106,6 +106,28 @@ class AppStrings {
           isUser: false,
         ),
       ];
+  String get expertAppBarTitle => _l10n.expertAppBarTitle;
+  String get expertIntroTitle => _l10n.expertIntroTitle;
+  String get expertIntroBody => _l10n.expertIntroBody;
+  String get expertEmergencyCta => _l10n.expertEmergencyCta;
+  String get expertEmergencySubtext => _l10n.expertEmergencySubtext;
+  String get expertListTitle => _l10n.expertListTitle;
+  String get expertBookSessionCta => _l10n.expertBookSessionCta;
+  String get expertMessageCta => _l10n.expertMessageCta;
+  String get expertCallCta => _l10n.expertCallCta;
+  String get expertMoreSpecialistsCta => _l10n.expertMoreSpecialistsCta;
+  List<ExpertProfileStrings> get expertProfiles => [
+        ExpertProfileStrings(
+          name: _l10n.expertProfile1Name,
+          title: _l10n.expertProfile1Title,
+          status: _l10n.expertProfile1Status,
+        ),
+        ExpertProfileStrings(
+          name: _l10n.expertProfile2Name,
+          title: _l10n.expertProfile2Title,
+          status: _l10n.expertProfile2Status,
+        ),
+      ];
 
   String languageLabel(Locale locale) {
     switch (locale.languageCode) {
@@ -137,4 +159,16 @@ class ChatMessageStrings {
 
   final String text;
   final bool isUser;
+}
+
+class ExpertProfileStrings {
+  const ExpertProfileStrings({
+    required this.name,
+    required this.title,
+    required this.status,
+  });
+
+  final String name;
+  final String title;
+  final String status;
 }

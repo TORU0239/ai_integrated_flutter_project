@@ -193,4 +193,52 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get chatbotSampleBotMessage2 => 'That sounds exhausting. We can look at small steps to ease your mind tonight. Would a short breathing exercise or journaling prompt help?';
+
+  @override
+  String get expertAppBarTitle => 'Connect with Experts';
+
+  @override
+  String get expertIntroTitle => 'Professional support';
+
+  @override
+  String get expertIntroBody => 'Licensed counselors are available for private video sessions, secure messaging, and crisis support.';
+
+  @override
+  String get expertEmergencyCta => 'Emergency help';
+
+  @override
+  String get expertEmergencySubtext => 'Contact crisis hotlines or request immediate assistance.';
+
+  @override
+  String get expertListTitle => 'Available counselors';
+
+  @override
+  String get expertBookSessionCta => 'Book video session';
+
+  @override
+  String get expertMessageCta => 'Send secure message';
+
+  @override
+  String get expertCallCta => 'Request call back';
+
+  @override
+  String get expertProfile1Name => 'Kim Seo-jun';
+
+  @override
+  String get expertProfile1Title => 'Licensed counselor · Trauma care';
+
+  @override
+  String get expertProfile1Status => 'Online · 15 min response';
+
+  @override
+  String get expertProfile2Name => 'Emily Park';
+
+  @override
+  String get expertProfile2Title => 'Clinical psychologist · Anxiety management';
+
+  @override
+  String get expertProfile2Status => 'Available today';
+
+  @override
+  String get expertMoreSpecialistsCta => 'Browse more specialists';
 }

@@ -466,6 +466,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'That sounds exhausting. We can look at small steps to ease your mind tonight. Would a short breathing exercise or journaling prompt help?'**
   String get chatbotSampleBotMessage2;
+
+  /// No description provided for @expertAppBarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Connect with Experts'**
+  String get expertAppBarTitle;
+
+  /// No description provided for @expertIntroTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional support'**
+  String get expertIntroTitle;
+
+  /// No description provided for @expertIntroBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Licensed counselors are available for private video sessions, secure messaging, and crisis support.'**
+  String get expertIntroBody;
+
+  /// No description provided for @expertEmergencyCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency help'**
+  String get expertEmergencyCta;
+
+  /// No description provided for @expertEmergencySubtext.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact crisis hotlines or request immediate assistance.'**
+  String get expertEmergencySubtext;
+
+  /// No description provided for @expertListTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Available counselors'**
+  String get expertListTitle;
+
+  /// No description provided for @expertBookSessionCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Book video session'**
+  String get expertBookSessionCta;
+
+  /// No description provided for @expertMessageCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Send secure message'**
+  String get expertMessageCta;
+
+  /// No description provided for @expertCallCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Request call back'**
+  String get expertCallCta;
+
+  /// No description provided for @expertProfile1Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Kim Seo-jun'**
+  String get expertProfile1Name;
+
+  /// No description provided for @expertProfile1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Licensed counselor · Trauma care'**
+  String get expertProfile1Title;
+
+  /// No description provided for @expertProfile1Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Online · 15 min response'**
+  String get expertProfile1Status;
+
+  /// No description provided for @expertProfile2Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Emily Park'**
+  String get expertProfile2Name;
+
+  /// No description provided for @expertProfile2Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Clinical psychologist · Anxiety management'**
+  String get expertProfile2Title;
+
+  /// No description provided for @expertProfile2Status.
+  ///
+  /// In en, this message translates to:
+  /// **'Available today'**
+  String get expertProfile2Status;
+
+  /// No description provided for @expertMoreSpecialistsCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse more specialists'**
+  String get expertMoreSpecialistsCta;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -61,5 +61,21 @@
   "chatbotSampleUserMessage1": "요즘 너무 벅차고 집중도 잘 안 돼요.",
   "chatbotSampleBotMessage1": "나눠줘서 고마워요. 잠시 깊게 숨을 쉬어보고, 무엇이 마음을 무겁게 하는지 함께 살펴볼까요?",
   "chatbotSampleUserMessage2": "주로 업무 스트레스랑 잠을 잘 못 자서 그런 것 같아요.",
-  "chatbotSampleBotMessage2": "정말 지칠 수 있는 상황이에요. 오늘 밤 마음을 가라앉힐 작은 방법을 찾아볼까요? 짧은 호흡 연습이나 저널링을 해보는 건 어떨까요?"
+  "chatbotSampleBotMessage2": "정말 지칠 수 있는 상황이에요. 오늘 밤 마음을 가라앉힐 작은 방법을 찾아볼까요? 짧은 호흡 연습이나 저널링을 해보는 건 어떨까요?",
+  "expertAppBarTitle": "전문가 연결",
+  "expertIntroTitle": "전문 상담 지원",
+  "expertIntroBody": "검증된 상담사와 화상 상담, 보안 메시지, 긴급 지원을 통해 안전하게 도움을 받아보세요.",
+  "expertEmergencyCta": "긴급 도움 요청",
+  "expertEmergencySubtext": "위기 대응 핫라인 또는 즉시 연결을 지원합니다.",
+  "expertListTitle": "상담사 리스트",
+  "expertBookSessionCta": "화상 상담 예약",
+  "expertMessageCta": "보안 메시지 보내기",
+  "expertCallCta": "전화 연결 요청",
+  "expertProfile1Name": "김서준",
+  "expertProfile1Title": "상담심리사 · 트라우마 케어",
+  "expertProfile1Status": "온라인 · 15분 내 응답",
+  "expertProfile2Name": "에밀리 박",
+  "expertProfile2Title": "임상심리사 · 불안 관리",
+  "expertProfile2Status": "오늘 상담 가능",
+  "expertMoreSpecialistsCta": "다른 전문가 더 보기"
 }

@@ -193,4 +193,52 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get chatbotSampleBotMessage2 => '정말 지칠 수 있는 상황이에요. 오늘 밤 마음을 가라앉힐 작은 방법을 찾아볼까요? 짧은 호흡 연습이나 저널링을 해보는 건 어떨까요?';
+
+  @override
+  String get expertAppBarTitle => '전문가 연결';
+
+  @override
+  String get expertIntroTitle => '전문 상담 지원';
+
+  @override
+  String get expertIntroBody => '검증된 상담사와 화상 상담, 보안 메시지, 긴급 지원을 통해 안전하게 도움을 받아보세요.';
+
+  @override
+  String get expertEmergencyCta => '긴급 도움 요청';
+
+  @override
+  String get expertEmergencySubtext => '위기 대응 핫라인 또는 즉시 연결을 지원합니다.';
+
+  @override
+  String get expertListTitle => '상담사 리스트';
+
+  @override
+  String get expertBookSessionCta => '화상 상담 예약';
+
+  @override
+  String get expertMessageCta => '보안 메시지 보내기';
+
+  @override
+  String get expertCallCta => '전화 연결 요청';
+
+  @override
+  String get expertProfile1Name => '김서준';
+
+  @override
+  String get expertProfile1Title => '상담심리사 · 트라우마 케어';
+
+  @override
+  String get expertProfile1Status => '온라인 · 15분 내 응답';
+
+  @override
+  String get expertProfile2Name => '에밀리 박';
+
+  @override
+  String get expertProfile2Title => '임상심리사 · 불안 관리';
+
+  @override
+  String get expertProfile2Status => '오늘 상담 가능';
+
+  @override
+  String get expertMoreSpecialistsCta => '다른 전문가 더 보기';
 }
