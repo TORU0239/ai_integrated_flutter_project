@@ -5,6 +5,7 @@ import '../widgets/app_card.dart';
 import 'chatbot_conversation_page.dart';
 import 'expert_connect_page.dart';
 import 'mood_history_page.dart';
+import 'report_self_care_page.dart';
 
 class HomeDashboardPage extends StatelessWidget {
   const HomeDashboardPage({super.key});
@@ -36,6 +37,14 @@ class HomeDashboardPage extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => const ExpertConnectPage(),
+      ),
+    );
+  }
+
+  void _openReportSelfCare(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => const ReportSelfCarePage(),
       ),
     );
   }
@@ -127,21 +136,21 @@ class HomeDashboardPage extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 24),
-            AppCard(
-              margin: const EdgeInsets.only(bottom: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          strings.homeRecentConversationsTitle,
-                          style: theme.textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.w600,
+              const SizedBox(height: 24),
+              AppCard(
+                margin: const EdgeInsets.only(bottom: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            strings.homeRecentConversationsTitle,
+                            style: theme.textTheme.titleMedium?.copyWith(
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
-                        ),
                       ),
                       TextButton(
                         onPressed: () => _showComingSoon(context),
@@ -190,29 +199,29 @@ class HomeDashboardPage extends StatelessWidget {
                       );
                     }),
                 ],
+                ),
               ),
-            ),
-            AppCard(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          strings.homeReportHighlightsTitle,
-                          style: theme.textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.w600,
+              AppCard(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            strings.homeReportHighlightsTitle,
+                            style: theme.textTheme.titleMedium?.copyWith(
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
-                      ),
-                      TextButton(
-                        onPressed: () => _showComingSoon(context),
-                        child: Text(strings.homeViewAll),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 12),
+                        TextButton(
+                        onPressed: () => _openReportSelfCare(context),
+                          child: Text(strings.homeViewAll),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 12),
                   ...highlights.map(
                     (highlight) => Padding(
                       padding: const EdgeInsets.only(bottom: 12),
