@@ -132,23 +132,31 @@ class AppStrings {
   String get moodHistoryIntro => _l10n.moodHistoryIntro;
   String get moodHistoryLogTitle => _l10n.moodHistoryLogTitle;
   String get moodHistoryEmpty => _l10n.moodHistoryEmpty;
-  List<MoodLogStrings> get moodHistorySamples => [
-        MoodLogStrings(
+  List<MoodLogEntry> get moodHistorySamples => [
+        MoodLogEntry(
           date: _l10n.moodHistorySampleDate1,
           summary: _l10n.moodHistorySampleSummary1,
           body: _l10n.moodHistorySampleBody1,
+          moodScore: _parseScore(_l10n.moodHistorySampleMood1),
+          energyScore: _parseScore(_l10n.moodHistorySampleEnergy1),
         ),
-        MoodLogStrings(
+        MoodLogEntry(
           date: _l10n.moodHistorySampleDate2,
           summary: _l10n.moodHistorySampleSummary2,
           body: _l10n.moodHistorySampleBody2,
+          moodScore: _parseScore(_l10n.moodHistorySampleMood2),
+          energyScore: _parseScore(_l10n.moodHistorySampleEnergy2),
         ),
-        MoodLogStrings(
+        MoodLogEntry(
           date: _l10n.moodHistorySampleDate3,
           summary: _l10n.moodHistorySampleSummary3,
           body: _l10n.moodHistorySampleBody3,
+          moodScore: _parseScore(_l10n.moodHistorySampleMood3),
+          energyScore: _parseScore(_l10n.moodHistorySampleEnergy3),
         ),
       ];
+  String get moodHistoryMoodLabel => _l10n.moodHistoryMoodLabel;
+  String get moodHistoryEnergyLabel => _l10n.moodHistoryEnergyLabel;
 
   String languageLabel(Locale locale) {
     switch (locale.languageCode) {
@@ -160,6 +168,8 @@ class AppStrings {
         return locale.toLanguageTag();
     }
   }
+
+  int _parseScore(String value) => int.tryParse(value) ?? 0;
 }
 
 class HomeConversationStrings {
@@ -194,14 +204,18 @@ class ExpertProfileStrings {
   final String status;
 }
 
-class MoodLogStrings {
-  const MoodLogStrings({
+class MoodLogEntry {
+  const MoodLogEntry({
     required this.date,
     required this.summary,
     required this.body,
+    required this.moodScore,
+    required this.energyScore,
   });
 
   final String date;
   final String summary;
   final String body;
+  final int moodScore;
+  final int energyScore;
 }

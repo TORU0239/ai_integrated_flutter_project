@@ -593,6 +593,18 @@ abstract class AppLocalizations {
   /// **'Today · 8:30 PM'**
   String get moodHistorySampleDate1;
 
+  /// No description provided for @moodHistorySampleMood1.
+  ///
+  /// In en, this message translates to:
+  /// **'7'**
+  String get moodHistorySampleMood1;
+
+  /// No description provided for @moodHistorySampleEnergy1.
+  ///
+  /// In en, this message translates to:
+  /// **'6'**
+  String get moodHistorySampleEnergy1;
+
   /// No description provided for @moodHistorySampleSummary1.
   ///
   /// In en, this message translates to:
@@ -610,6 +622,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Yesterday · 11:15 AM'**
   String get moodHistorySampleDate2;
+
+  /// No description provided for @moodHistorySampleMood2.
+  ///
+  /// In en, this message translates to:
+  /// **'5'**
+  String get moodHistorySampleMood2;
+
+  /// No description provided for @moodHistorySampleEnergy2.
+  ///
+  /// In en, this message translates to:
+  /// **'4'**
+  String get moodHistorySampleEnergy2;
 
   /// No description provided for @moodHistorySampleSummary2.
   ///
@@ -629,6 +653,18 @@ abstract class AppLocalizations {
   /// **'3 days ago · 9:00 PM'**
   String get moodHistorySampleDate3;
 
+  /// No description provided for @moodHistorySampleMood3.
+  ///
+  /// In en, this message translates to:
+  /// **'3'**
+  String get moodHistorySampleMood3;
+
+  /// No description provided for @moodHistorySampleEnergy3.
+  ///
+  /// In en, this message translates to:
+  /// **'3'**
+  String get moodHistorySampleEnergy3;
+
   /// No description provided for @moodHistorySampleSummary3.
   ///
   /// In en, this message translates to:
@@ -640,6 +676,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Felt anxious most of the day. Journaling helped slightly. Will share with counselor next session.'**
   String get moodHistorySampleBody3;
+
+  /// No description provided for @moodHistoryMoodLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Mood'**
+  String get moodHistoryMoodLabel;
+
+  /// No description provided for @moodHistoryEnergyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Energy'**
+  String get moodHistoryEnergyLabel;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

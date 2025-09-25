@@ -258,6 +258,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get moodHistorySampleDate1 => '오늘 · 오후 8:30';
 
   @override
+  String get moodHistorySampleMood1 => '7';
+
+  @override
+  String get moodHistorySampleEnergy1 => '6';
+
+  @override
   String get moodHistorySampleSummary1 => '저녁 산책 후 마음이 한결 밝아짐';
 
   @override
@@ -265,6 +271,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get moodHistorySampleDate2 => '어제 · 오전 11:15';
+
+  @override
+  String get moodHistorySampleMood2 => '5';
+
+  @override
+  String get moodHistorySampleEnergy2 => '4';
 
   @override
   String get moodHistorySampleSummary2 => '스트레스 있지만 버티는 중';
@@ -276,8 +288,20 @@ class AppLocalizationsKo extends AppLocalizations {
   String get moodHistorySampleDate3 => '3일 전 · 오후 9:00';
 
   @override
+  String get moodHistorySampleMood3 => '3';
+
+  @override
+  String get moodHistorySampleEnergy3 => '3';
+
+  @override
   String get moodHistorySampleSummary3 => '기분이 많이 가라앉음';
 
   @override
   String get moodHistorySampleBody3 => '종일 불안함. 저널링으로 조금 나아짐. 다음 상담 때 공유 예정.';
+
+  @override
+  String get moodHistoryMoodLabel => '기분';
+
+  @override
+  String get moodHistoryEnergyLabel => '에너지';
 }

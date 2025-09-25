@@ -258,6 +258,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get moodHistorySampleDate1 => 'Today · 8:30 PM';
 
   @override
+  String get moodHistorySampleMood1 => '7';
+
+  @override
+  String get moodHistorySampleEnergy1 => '6';
+
+  @override
   String get moodHistorySampleSummary1 => 'Feeling hopeful after evening walk';
 
   @override
@@ -265,6 +271,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get moodHistorySampleDate2 => 'Yesterday · 11:15 AM';
+
+  @override
+  String get moodHistorySampleMood2 => '5';
+
+  @override
+  String get moodHistorySampleEnergy2 => '4';
 
   @override
   String get moodHistorySampleSummary2 => 'Stressed but managing';
@@ -276,8 +288,20 @@ class AppLocalizationsEn extends AppLocalizations {
   String get moodHistorySampleDate3 => '3 days ago · 9:00 PM';
 
   @override
+  String get moodHistorySampleMood3 => '3';
+
+  @override
+  String get moodHistorySampleEnergy3 => '3';
+
+  @override
   String get moodHistorySampleSummary3 => 'Low mood';
 
   @override
   String get moodHistorySampleBody3 => 'Felt anxious most of the day. Journaling helped slightly. Will share with counselor next session.';
+
+  @override
+  String get moodHistoryMoodLabel => 'Mood';
+
+  @override
+  String get moodHistoryEnergyLabel => 'Energy';
 }
