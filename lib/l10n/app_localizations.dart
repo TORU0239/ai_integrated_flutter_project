@@ -688,6 +688,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Energy'**
   String get moodHistoryEnergyLabel;
+
+  /// No description provided for @reportAppBarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports & self-care'**
+  String get reportAppBarTitle;
+
+  /// No description provided for @reportEmotionTrendTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Emotion trend'**
+  String get reportEmotionTrendTitle;
+
+  /// No description provided for @reportEmotionTrendSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your mood has remained steady this week with fewer low points compared to last week.'**
+  String get reportEmotionTrendSubtitle;
+
+  /// No description provided for @reportConsultationSummaryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Counseling summary'**
+  String get reportConsultationSummaryTitle;
+
+  /// No description provided for @reportConsultationItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'AI counseling · Yesterday — Practiced mindful breathing and logged calm mood.'**
+  String get reportConsultationItem1;
+
+  /// No description provided for @reportConsultationItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Chatbot check-in · 3 days ago — Noted work stress; suggested journaling helped.'**
+  String get reportConsultationItem2;
+
+  /// No description provided for @reportConsultationItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Mood survey · Last week — Reported improved sleep after routine adjustments.'**
+  String get reportConsultationItem3;
+
+  /// No description provided for @reportSelfCareTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Self-care recommendations'**
+  String get reportSelfCareTitle;
+
+  /// No description provided for @reportSelfCareMeditation.
+  ///
+  /// In en, this message translates to:
+  /// **'5-minute mindful breathing'**
+  String get reportSelfCareMeditation;
+
+  /// No description provided for @reportSelfCareMeditationDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'A guided audio to settle racing thoughts before sleep.'**
+  String get reportSelfCareMeditationDesc;
+
+  /// No description provided for @reportSelfCareArticle.
+  ///
+  /// In en, this message translates to:
+  /// **'Understanding emotional triggers'**
+  String get reportSelfCareArticle;
+
+  /// No description provided for @reportSelfCareArticleDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Read a short article on identifying and reframing negative patterns.'**
+  String get reportSelfCareArticleDesc;
+
+  /// No description provided for @reportExportCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Export detailed report'**
+  String get reportExportCta;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

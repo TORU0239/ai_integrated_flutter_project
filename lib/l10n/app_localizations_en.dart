@@ -304,4 +304,43 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get moodHistoryEnergyLabel => 'Energy';
+
+  @override
+  String get reportAppBarTitle => 'Reports & self-care';
+
+  @override
+  String get reportEmotionTrendTitle => 'Emotion trend';
+
+  @override
+  String get reportEmotionTrendSubtitle => 'Your mood has remained steady this week with fewer low points compared to last week.';
+
+  @override
+  String get reportConsultationSummaryTitle => 'Counseling summary';
+
+  @override
+  String get reportConsultationItem1 => 'AI counseling · Yesterday — Practiced mindful breathing and logged calm mood.';
+
+  @override
+  String get reportConsultationItem2 => 'Chatbot check-in · 3 days ago — Noted work stress; suggested journaling helped.';
+
+  @override
+  String get reportConsultationItem3 => 'Mood survey · Last week — Reported improved sleep after routine adjustments.';
+
+  @override
+  String get reportSelfCareTitle => 'Self-care recommendations';
+
+  @override
+  String get reportSelfCareMeditation => '5-minute mindful breathing';
+
+  @override
+  String get reportSelfCareMeditationDesc => 'A guided audio to settle racing thoughts before sleep.';
+
+  @override
+  String get reportSelfCareArticle => 'Understanding emotional triggers';
+
+  @override
+  String get reportSelfCareArticleDesc => 'Read a short article on identifying and reframing negative patterns.';
+
+  @override
+  String get reportExportCta => 'Export detailed report';
 }

@@ -98,5 +98,18 @@
   "moodHistorySampleSummary3": "기분이 많이 가라앉음",
   "moodHistorySampleBody3": "종일 불안함. 저널링으로 조금 나아짐. 다음 상담 때 공유 예정.",
   "moodHistoryMoodLabel": "기분",
-  "moodHistoryEnergyLabel": "에너지"
+  "moodHistoryEnergyLabel": "에너지",
+  "reportAppBarTitle": "리포트 & 자기관리",
+  "reportEmotionTrendTitle": "감정 변화 추이",
+  "reportEmotionTrendSubtitle": "이번 주 감정 그래프는 지난주보다 저점이 줄어들며 안정적인 흐름을 보였어요.",
+  "reportConsultationSummaryTitle": "상담 이력 요약",
+  "reportConsultationItem1": "AI 상담 · 어제 — 마음챙김 호흡 연습 후 안정감 기록.",
+  "reportConsultationItem2": "챗봇 체크인 · 3일 전 — 업무 스트레스 공유, 저널링이 도움이 되었다고 보고.",
+  "reportConsultationItem3": "감정 설문 · 지난주 — 수면 루틴 조정 후 기분 개선 보고.",
+  "reportSelfCareTitle": "추천 자기관리",
+  "reportSelfCareMeditation": "5분 마음챙김 호흡",
+  "reportSelfCareMeditationDesc": "잠들기 전 마음을 가라앉히는 가이드 음원.",
+  "reportSelfCareArticle": "감정 트리거 이해하기",
+  "reportSelfCareArticleDesc": "부정 패턴을 인식하고 재구성하는 방법을 다룬 짧은 글.",
+  "reportExportCta": "자세한 리포트 내보내기"
 }

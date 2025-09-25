@@ -304,4 +304,43 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get moodHistoryEnergyLabel => '에너지';
+
+  @override
+  String get reportAppBarTitle => '리포트 & 자기관리';
+
+  @override
+  String get reportEmotionTrendTitle => '감정 변화 추이';
+
+  @override
+  String get reportEmotionTrendSubtitle => '이번 주 감정 그래프는 지난주보다 저점이 줄어들며 안정적인 흐름을 보였어요.';
+
+  @override
+  String get reportConsultationSummaryTitle => '상담 이력 요약';
+
+  @override
+  String get reportConsultationItem1 => 'AI 상담 · 어제 — 마음챙김 호흡 연습 후 안정감 기록.';
+
+  @override
+  String get reportConsultationItem2 => '챗봇 체크인 · 3일 전 — 업무 스트레스 공유, 저널링이 도움이 되었다고 보고.';
+
+  @override
+  String get reportConsultationItem3 => '감정 설문 · 지난주 — 수면 루틴 조정 후 기분 개선 보고.';
+
+  @override
+  String get reportSelfCareTitle => '추천 자기관리';
+
+  @override
+  String get reportSelfCareMeditation => '5분 마음챙김 호흡';
+
+  @override
+  String get reportSelfCareMeditationDesc => '잠들기 전 마음을 가라앉히는 가이드 음원.';
+
+  @override
+  String get reportSelfCareArticle => '감정 트리거 이해하기';
+
+  @override
+  String get reportSelfCareArticleDesc => '부정 패턴을 인식하고 재구성하는 방법을 다룬 짧은 글.';
+
+  @override
+  String get reportExportCta => '자세한 리포트 내보내기';
 }

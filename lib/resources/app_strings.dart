@@ -157,6 +157,27 @@ class AppStrings {
       ];
   String get moodHistoryMoodLabel => _l10n.moodHistoryMoodLabel;
   String get moodHistoryEnergyLabel => _l10n.moodHistoryEnergyLabel;
+  String get reportAppBarTitle => _l10n.reportAppBarTitle;
+  String get reportEmotionTrendTitle => _l10n.reportEmotionTrendTitle;
+  String get reportEmotionTrendSubtitle => _l10n.reportEmotionTrendSubtitle;
+  String get reportConsultationSummaryTitle => _l10n.reportConsultationSummaryTitle;
+  List<String> get reportConsultationItems => [
+        _l10n.reportConsultationItem1,
+        _l10n.reportConsultationItem2,
+        _l10n.reportConsultationItem3,
+      ];
+  String get reportSelfCareTitle => _l10n.reportSelfCareTitle;
+  SelfCareRecommendation get reportSelfCareMeditation => SelfCareRecommendation(
+        title: _l10n.reportSelfCareMeditation,
+        description: _l10n.reportSelfCareMeditationDesc,
+        icon: Icons.self_improvement,
+      );
+  SelfCareRecommendation get reportSelfCareArticle => SelfCareRecommendation(
+        title: _l10n.reportSelfCareArticle,
+        description: _l10n.reportSelfCareArticleDesc,
+        icon: Icons.menu_book_outlined,
+      );
+  String get reportExportCta => _l10n.reportExportCta;
 
   String languageLabel(Locale locale) {
     switch (locale.languageCode) {
@@ -218,4 +239,16 @@ class MoodLogEntry {
   final String body;
   final int moodScore;
   final int energyScore;
+}
+
+class SelfCareRecommendation {
+  const SelfCareRecommendation({
+    required this.title,
+    required this.description,
+    required this.icon,
+  });
+
+  final String title;
+  final String description;
+  final IconData icon;
 }

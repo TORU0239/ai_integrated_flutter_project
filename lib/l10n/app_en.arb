@@ -98,5 +98,18 @@
   "moodHistorySampleSummary3": "Low mood",
   "moodHistorySampleBody3": "Felt anxious most of the day. Journaling helped slightly. Will share with counselor next session.",
   "moodHistoryMoodLabel": "Mood",
-  "moodHistoryEnergyLabel": "Energy"
+  "moodHistoryEnergyLabel": "Energy",
+  "reportAppBarTitle": "Reports & self-care",
+  "reportEmotionTrendTitle": "Emotion trend",
+  "reportEmotionTrendSubtitle": "Your mood has remained steady this week with fewer low points compared to last week.",
+  "reportConsultationSummaryTitle": "Counseling summary",
+  "reportConsultationItem1": "AI counseling · Yesterday — Practiced mindful breathing and logged calm mood.",
+  "reportConsultationItem2": "Chatbot check-in · 3 days ago — Noted work stress; suggested journaling helped.",
+  "reportConsultationItem3": "Mood survey · Last week — Reported improved sleep after routine adjustments.",
+  "reportSelfCareTitle": "Self-care recommendations",
+  "reportSelfCareMeditation": "5-minute mindful breathing",
+  "reportSelfCareMeditationDesc": "A guided audio to settle racing thoughts before sleep.",
+  "reportSelfCareArticle": "Understanding emotional triggers",
+  "reportSelfCareArticleDesc": "Read a short article on identifying and reframing negative patterns.",
+  "reportExportCta": "Export detailed report"
 }
